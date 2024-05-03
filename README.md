@@ -1,0 +1,2 @@
+# PastePilot
+Clipboard AI Agent
