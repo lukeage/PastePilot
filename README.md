@@ -5,6 +5,8 @@ Connect any OpenAi conform API to your Clipboard (local or remote).
 
 ![PastePilot in Action](data/pastepilot.gif)
 
+![PastePilot in Action](data/pastepilot2.gif)
+
 ## How does it work?
 1. Copy any text anywhere. 
     * If the text contains `|||`
@@ -18,6 +20,7 @@ To check whether everything works copy the following text:
 ```
 
 ## Installation
+0. checkout (download) this git-repository
 1. copy the `.env`-file to `.env.prod` and fill in your `AI_API_KEY`
 2. Open a powershell (`>= v5.1`) and execute `start.ps1`
 
