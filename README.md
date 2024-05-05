@@ -24,7 +24,7 @@ To check whether everything works copy the following text:
 1. copy the `.env`-file to `.env.prod` and fill in your `AI_API_KEY`
 2. Open a powershell (`>= v5.1`) and execute `start.ps1`
 
-Your PastePilot is up and running as long as the powershell session is not closed :-)
+Your PastePilot is up and running as long as the powershell session is alive :-)
 
 ## Privacy
 * Your API-Key is only used to invoke the API and is not shared with anybody else.
