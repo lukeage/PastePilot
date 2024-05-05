@@ -1,14 +1,9 @@
-```
- ____           _       ____  _ _       _  
-|  _ \ ___  ___| |_ ___|  _ \(_) | ___ | |_ 
-| |_) / _  / __| __/ _ \ |_) | | |/ _ \| __|
-|  __/ (_| \__ \ ||  __/  __/| | | (_) | |_ 
-|_|   \__,_|___/\__\___|_|   |_|_|\___/ \__|
-```
-
+# PastePilot
 A Clipboard AI Agent for Windows.
 
 Connect any OpenAi conform API to your Clipboard (local or remote).
+
+![PastePilot in Action](data/pastepilot.gif)
 
 ## How does it work?
 1. Copy any text anywhere. 
