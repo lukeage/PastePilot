@@ -5,6 +5,12 @@ function Invoke-OpenAIChat {
     [string]$Prompt,
 
     [Parameter(Mandatory=$true)]
+    [string]$UserPrompt,
+
+    [Parameter(Mandatory=$true)]
+    [string]$SystemPrompt,
+
+    [Parameter(Mandatory=$true)]
     [string]$ApiKey,
 
     [Parameter(Mandatory=$true)]
@@ -26,11 +32,11 @@ function Invoke-OpenAIChat {
       "messages" = @(
           @{
               "role" = "system"
-              "content" = "You are an AI trained to engage in natural and coherent conversations with users. Your role is to understand user queries and respond in a helpful and accurate manner, tailored to the simplicity or complexity of the user's input. When responding to basic greetings or straightforward questions, keep your replies concise and direct. Expand your responses appropriately when the conversation demands more detailed information or when the user seeks in-depth discussion. Prioritize clarity and avoid over-elaboration unless prompted by the user. Your ultimate goal is to adapt your conversational style to fit the user's needs, ensuring a satisfying and human-like interaction."
+              "content" = $SystemPrompt
           },
           @{
             "role" = "user"
-            "content" = $Prompt
+            "content" = $UserPrompt + $Prompt
         }
       )
       "max_tokens" = $MaxTokens

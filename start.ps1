@@ -34,4 +34,8 @@ CLIPBOARD_TRIGGER_SEQUENCE = '$($env:CLIPBOARD_TRIGGER_SEQUENCE)'
 Waiting for trigger '$($env:CLIPBOARD_TRIGGER_SEQUENCE) <your-text>' ...
 "@
 
-Watch-Clipboard -Sequence "$($env:CLIPBOARD_TRIGGER_SEQUENCE)"
+Watch-Clipboard `
+  -TriggerSequence "$($env:CLIPBOARD_TRIGGER_SEQUENCE)" `
+  -SplitSequence "$($env:CLIPBOARD_SPLIT_SEQUENCE)" `
+  -PathToSystemPrompts (Join-Path $PastePilotDir "system_prompts") `
+  -PathToUserPrompts (Join-Path $PastePilotDir "user_prompts")

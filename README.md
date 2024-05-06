@@ -3,11 +3,16 @@ A Clipboard AI Agent for Windows.
 
 Connect any OpenAi conform API to your Clipboard (local or remote).
 
+
+
 ![PastePilot in Action](data/pastepilot.gif)
 
 ![PastePilot in Action](data/pastepilot2.gif)
 
 ## How does it work?
+
+![PastePilot](data/pastepilot.png)
+
 1. Copy any text anywhere. 
     * If the text contains `|||`
         * The clipboard will be send to the chosen AI-API-Endpoint and a popup with the `<response>` will show up.
@@ -15,7 +20,7 @@ Connect any OpenAi conform API to your Clipboard (local or remote).
 
 ## Try it out
 To check whether everything works copy the following text:
-```powershell
+```
 ||| Hi, tell me a funny joke :-).
 ```
 
